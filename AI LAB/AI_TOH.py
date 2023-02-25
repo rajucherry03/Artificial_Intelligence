@@ -1,9 +1,0 @@
-def toh(n,sp,ip,dp):
-    if n==1:
-        print("Move disc",1,"from",sp,"to",dp)
-        return
-    toh(n-1,sp,dp,ip)
-    print("Move disc",n,"from",sp,"to",dp)
-    toh(n-1,ip,sp,dp)
-n=3
-toh(n,'A','B','C')
